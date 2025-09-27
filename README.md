@@ -1,44 +1,26 @@
-# Ticket Web - Vue1
+# Ticket Web (Vue Version)
 
-This template should help get you started developing with Vue 3 in Vite.
+This is the **Vue.js** version of the Ticket Web application, originally built with React.  
+The app allows users to **sign up, log in, and manage tickets** efficiently with a clean and responsive UI.  
 
-## Recommended IDE Setup
+It uses **Firebase Authentication** for user management and is styled with **modern light blue color tones**, keeping the same design as the React version for consistency.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+---
 
-## Recommended Browser Setup
+##  Features
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+- User **Signup** and **Login** with Firebase Authentication  
+- Fully **responsive design** for all screen sizes  
+- **Smooth hover effects** and icons for interactivity  
+- Built with **Vue 3** + **Vite** for fast development  
+- **Consistent design** with the React version (non-identical twins look 😉)
 
-## Customize configuration
+---
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+##  Tech Stack
 
-## Project Setup
+- **Vue 3**  
+- **Vite**   
+- **CSS3** (custom styles)  
 
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+---
