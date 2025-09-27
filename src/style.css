@@ -1,0 +1,133 @@
+:root{
+  --bg:#f9fcff;
+  --text:#1e2a3a;
+  --primary:#1976d2;
+  --primary-dark:#0d47a1;
+  --muted:#e3f2fd;
+  --card:#ffffff;
+  --maxw:1440px;
+  --center-padding:16px;
+  --container-bg: #ffffff;
+}
+
+/* base */
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  padding:20px;
+}
+
+/* central wrapper */
+.page {
+  width:100%;
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding:20px;
+}
+
+/* NAVBAR */
+.navbar {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:#161b28;
+  color:#fff;
+  padding:10px 20px;
+  border-radius:10px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+.nav-left {display:flex; align-items:center; gap:12px}
+.brand {
+  display:flex; align-items:center; gap:10px;
+  cursor:pointer;
+}
+.brand .logo {
+  width:36px; height:36px; border-radius:8px; background:var(--primary);
+  display:inline-block;
+}
+.nav-links {display:flex; gap:12px}
+.nav-links a {
+  color:#cfd6e2; text-decoration:none; padding:6px 10px; border-radius:8px;
+}
+.nav-links a.active, .nav-links a:hover { background:#ffffff11; color:#fff}
+
+/* footer */
+.site-footer {
+  margin-top:40px;
+  text-align:center;
+  color:#6b7280;
+  font-size:14px;
+}
+
+/* HERO */
+.hero {
+  position:relative;
+  overflow:hidden;
+  border-radius:12px;
+  background: linear-gradient(180deg, #bbdefb 0%, #e3f2fd 100%);
+  padding:64px 24px 120px;
+  text-align:center;
+}
+.hero .inner {
+  max-width:900px; margin:0 auto;
+}
+.hero h1 {font-size:2.6rem; margin-bottom:8px; color: #073763}
+.hero p {font-size:1.1rem; margin-bottom:22px; color:#11497a}
+.hero .btns {display:flex; gap:12px; justify-content:center; flex-wrap:wrap}
+.btn {
+  padding:12px 20px; border-radius:999px; cursor:pointer; font-weight:600;
+  border:none; outline:none;
+}
+.btn.primary { background:var(--primary); color:#fff}
+.btn.primary:hover { background:var(--primary-dark)}
+.btn.secondary { background:#fff; color:var(--primary); border:2px solid var(--primary) }
+.btn.secondary:hover { background:#e3f2fd}
+
+/* decorative circle(s) */
+.decor-circle {
+  position:absolute; top:40px; left:8%;
+  width:120px; height:120px; border-radius:50%; background:#bbdefb; opacity:0.6;
+}
+.decor-circle.two {
+  position:absolute; top:10%; right:8%;
+  width:64px; height:64px; border-radius:50%; background:#90caf9; opacity:0.4;
+}
+
+/* SVG wave at bottom of hero */
+.wave { position:absolute; left:0; bottom:0; width:100%; }
+
+/* features (card-like boxes) */
+.features {
+  display:flex; gap:16px; justify-content:center; padding:40px 0; flex-wrap:wrap;
+}
+.feature {
+  flex:1 1 260px; max-width:320px;
+  background:var(--muted); padding:18px; border-radius:12px; box-shadow:0 8px 18px rgba(0,0,0,0.06);
+}
+.feature h3 {margin:0 0 8px; color:#0d47a1}
+.feature p {margin:0; color:#08304a}
+
+/* CARD container used by Dashboard & Tickets */
+.card {
+  background:#fff; padding:18px; border-radius:12px; box-shadow:0 8px 20px rgba(14,30,37,0.06);
+  color:var(--text);
+}
+
+/* small util */
+.row { display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
+.column { display:flex; flex-direction:column; gap:12px; }
+
+/* responsive */
+@media (max-width:900px){
+  .hero { padding:48px 14px 96px; }
+  .hero h1 { font-size:2rem; }
+  .features { padding:24px 0; }
+}
